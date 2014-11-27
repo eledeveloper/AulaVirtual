@@ -34,6 +34,16 @@ security:
             #http_basic:
             #    realm: "Secured Demo Area"
 
+        ### firewall para administrador
+        admin:
+            pattern:    ^/
+            anonymous:  ~
+            http_basic:
+                realm:  "Area Restringida - Administrador"
+
     access_control:
         - { path: ^/demo/secured/hello/admin/, roles: ROLE_ADMIN }
         #- { path: ^/login, roles: IS_AUTHENTICATED_ANONYMOUSLY, requires_channel: https }
+
+        ### ruta de area de administrador
+        - { path: ^/admin, roles: ROLE_ADMIN }
