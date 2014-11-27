@@ -1,5 +1,5 @@
 eliecer_principal_homepage:
-    path:       /hello/{name}
+    path:       /
     defaults:   { _controller: EliecerPrincipalBundle:Default:index }
 
 eliecer_admin:
