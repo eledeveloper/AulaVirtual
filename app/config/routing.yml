@@ -1,0 +1,4 @@
+eliecer_principal:
+    resource: "@EliecerPrincipalBundle/Resources/config/routing.yml"
+    prefix:   /
+

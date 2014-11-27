@@ -1,0 +1,3 @@
+eliecer_principal_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: EliecerPrincipalBundle:Default:index }
